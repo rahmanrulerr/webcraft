@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - WebCraft</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>WebCraft</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Beranda</a>
+                <a href="index.html#services" class="nav-link">Layanan</a>
+                <a href="index.html#about" class="nav-link">Tentang</a>
+                <a href="products.html" class="nav-link active">Produk</a>
+                <a href="index.html#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content" data-aos="fade-up">
+                <h1>Portfolio & Produk Website</h1>
+                <p>Lihat berbagai website yang telah kami buat untuk klien-klien kami</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="grid-container" id="products-container">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="corporate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <div class="image-placeholder corporate-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">teknoinnovasi.co.id</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">🏢</div>
+                                    <h3>PT Tekno Inovasi</h3>
+                                    <p>Corporate Website</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('teknoinnovasi')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>PT Tekno Inovasi Indonesia</h3>
+                        <p class="product-category">Website Corporate</p>
+                        <p class="product-description">
+                            Website corporate untuk perusahaan teknologi dengan design modern dan professional. 
+                            Dilengkapi dengan company profile, layanan, dan sistem manajemen konten.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">Responsive</span>
+                            <span class="tag">CMS</span>
+                            <span class="tag">SEO Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="ecommerce" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <div class="image-placeholder ecommerce-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">fashionstore.id</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">🛒</div>
+                                    <h3>Fashion Store</h3>
+                                    <p>E-Commerce Platform</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('fashionstore')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fashion Store Online</h3>
+                        <p class="product-category">E-Commerce</p>
+                        <p class="product-description">
+                            Platform e-commerce lengkap untuk penjualan fashion dengan sistem pembayaran terintegrasi, 
+                            manajemen inventory, dan dashboard admin yang user-friendly.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">Payment Gateway</span>
+                            <span class="tag">Admin Panel</span>
+                            <span class="tag">Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="landing" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <div class="image-placeholder landing-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">digitalmarketing.pro</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">📈</div>
+                                    <h3>Digital Marketing</h3>
+                                    <p>Landing Page</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('digitalmarketing')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Digital Marketing Agency</h3>
+                        <p class="product-category">Landing Page</p>
+                        <p class="product-description">
+                            Landing page yang dioptimalkan untuk konversi tinggi, dilengkapi dengan form lead generation, 
+                            testimonial interaktif, dan integrasi analytics.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">High Converting</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">A/B Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="portfolio" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <div class="image-placeholder portfolio-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">johndoe.design</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">🎨</div>
+                                    <h3>John Doe</h3>
+                                    <p>Creative Portfolio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('johndoe')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>John Doe Creative Portfolio</h3>
+                        <p class="product-category">Portfolio Website</p>
+                        <p class="product-description">
+                            Website portfolio untuk desainer grafis dengan galeri interaktif, animasi smooth, 
+                            dan showcase project yang menarik untuk memamerkan karya kreatif.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">Interactive</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">Gallery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="corporate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <div class="image-placeholder corporate-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">healthclinic.co.id</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">🏥</div>
+                                    <h3>Health Clinic</h3>
+                                    <p>Medical Website</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('healthclinic')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Prima Health Clinic</h3>
+                        <p class="product-category">Website Corporate</p>
+                        <p class="product-description">
+                            Website untuk klinik kesehatan dengan sistem booking appointment online, 
+                            informasi dokter dan layanan, serta integrasi dengan sistem manajemen rumah sakit.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">Booking System</span>
+                            <span class="tag">Doctor Portal</span>
+                            <span class="tag">Medical CMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="ecommerce" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <div class="image-placeholder ecommerce-bg">
+                            <div class="website-preview">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-url">fooddelivery.app</div>
+                                </div>
+                                <div class="preview-content">
+                                    <div class="preview-header">🍕</div>
+                                    <h3>Food Delivery</h3>
+                                    <p>Delivery Platform</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="btn btn-primary" onclick="openModal('fooddelivery')">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Food Delivery Platform</h3>
+                        <p class="product-category">E-Commerce</p>
+                        <p class="product-description">
+                            Platform delivery makanan dengan sistem real-time tracking, multiple payment options, 
+                            dan dashboard untuk restaurant partner management.
+                        </p>
+                        <div class="product-tags">
+                            <span class="tag">Real-time Tracking</span>
+                            <span class="tag">Multi Vendor</span>
+                            <span class="tag">Mobile First</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Siap Memulai Project Website Anda?</h2>
+                <p>Bergabunglah dengan 150+ klien yang telah mempercayakan website mereka kepada kami</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebCraft</h3>
+                    <p>Mewujudkan website impian Anda dengan teknologi terdepan dan design yang menawan.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#corporate">Website Corporate</a></li>
+                        <li><a href="#ecommerce">E-Commerce</a></li>
+                        <li><a href="#landing">Landing Page</a></li>
+                        <li><a href="#portfolio">Portfolio Website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="index.html#about">Tentang Kami</a></li>
+                        <li><a href="products.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WebCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+</html>
